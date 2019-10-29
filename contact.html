@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plant Shop - Contact</title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+        rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CLora%7CPlayfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/grid4col.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+</head>
+<body>
+<div class="page-wrap"> <!--Content Group-->
+  <div class="section group"> <!--Banner group-->
+    <div id="banner" class="col span_4_of_4">
+      <!--      Free vector art via <a href="https://www.vecteezy.com">www.vecteezy.com</a>      -->
+      <h1 id="banner-title">Plant Shop</h1>
+    </div>
+  </div> <!--Banner Group-->
+  <div class="section group"> <!--Nav group-->
+    <div id="nav-out" class="col span_4_of_4">
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="curr-page">Contact</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="plants.html" class="nav-links">Plants</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div> <!--Nav Group-->
+  <div class="section group"> <!--Spacing Group-->
+    <div class="col span_2_of_4"></div>
+    <div class="col span_2_of_4"></div>
+  </div> <!--Spacing Group-->
+  <div class="section group"> <!--Main Group-->
+    <div class="col span_2_of_4"> <!--Left Column-->
+      <div id="map">
+      </div><br  />
+      <div id="address">
+        <p>
+          Lower Queen Anne: 124 Warren Ave N<br  />
+          Hours: 10am-7pm<br  />
+          Phone: (206) 867-5309
+        </p>
+
+      </div>
+    </div> <!--Left Column-->
+    <div class="col span_2_of_4">
+      <h2 class="col-heading">Contact us</h2>
+      <form action="comment.html" id="registration-form" method="post">
+        <p>
+          E-mail<br  />
+          <input name="email" data-validation="email">
+        </p><br  />
+        <p>
+          Name<br  />
+          <input name="user" data-validation="length alphanumeric"
+                 data-validation-length="2-40"
+                 data-validation-allowing="- "
+                 data-validation-error-msg="Name has to be an alphanumeric value (2-40 chars)">
+        </p><br  />
+        <p>
+          <input type="checkbox" name="newsletters[]" data-validation="checkbox_group" data-validation-qty="min1">
+          Would you like to join our mailing list?
+        </p><br  />
+        <p>
+          How can we help you? (<span id="pres-max-length">400</span> characters left)<br  />
+          <textarea name="presentation" id="presentation"></textarea>
+        </p><br  />
+        <p>
+          <input type="submit" value="Submit">
+        </p><br  />
+      </form>
+    </div> <!--Right Column-->
+  </div> <!--Main Group-->
+</div> <!--Content Group-->
+<footer class="section group site-footer"> <!--Footer Group-->
+  <div class="col span_4_of_4">
+    <p>
+      <a href="https://www.instagram.com/janeyenaj/?hl=en" class="footer-icons"><img src="images/icons/ig.svg" alt="Instagram icon"></a>
+      <a href="mailto:ThePlantShop@gmail.com"
+         class="footer-icons"><img src="images/icons/envelope.svg" alt="Email icon"></a>
+    </p>
+    <p><span id="year"></span><a href="contact.html" target="_blank">Plant Shop</a> All Rights Reserved</p>
+  </div>
+</footer> <!--Footer Group-->
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+/*
+Gallery styling from @duggiemitchell on CodePen.
+https://codepen.io/duggiemitchell/pen/OyGJqQ?editors=1100
+Flourescent Orange: #FFBF00
+Paradise Pink: #E83F6F
+Lapis Lazuli: #2274A5
+Linen: #F9E7E7
+White: #FFFFFF
+ */
+
+
+/****************************
+ START DEFAULT GALLERY STYLES
+ ****************************/
+
+.wrap {
+    overflow: hidden;
+    /*margin: 10px;*/
+}
+
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+}
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+.boxInner img {
+    width: 100%;
+}
+
+.boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.plant-gallery img {
+    max-width: 100%;
+}
+
+.no-touch { /* To align with page ID */
+    margin: auto 10px;
+}
+
+section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+}
+
+.force-cart {
+    display: none;
+}
+
+
+@media only screen and (max-width : 600px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .plant-gallery img { /* Overwrites FP main img style */
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 650px) and (min-width : 601px) {
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    .plant-gallery img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
+
+    .plant-gallery img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+
+    .plant-gallery img {
+        max-width: 100%;
+    }
+}
+
+/****************************
+  END DEFAULT GALLERY STYLES
+ ****************************/
+
+/****************************
+  START CUSTOM GALLERY STYLES
+ ****************************/
+
+.cb-label {
+    margin-bottom: 0;
+}
+
+.cb-container fieldset {
+    border: 2px solid #2274A5;
+}
+
+.cb-container fieldset legend {
+    font-size: 1.15em;
+}
+@media all and (max-width:600px) {
+    /* Adds plant names to bottom of plant image by default */
+    .titleBox {
+        margin-bottom: 0!important;
+    }
+
+    .cb-container fieldset {
+        font-family: "ubuntu", sans-serif;
+        text-align: left;
+        margin: 0 30px 10px 30px;
+    }
+
+    .cb-container fieldset:nth-child(1) {
+        margin-top: 10px;
+    }
+
+    .cb-container fieldset:nth-child(4) {
+        margin-bottom: 20px;
+    }
+
+    .cb-container legend {
+        color: #FFBF00;
+        text-align: center;
+    }
+
+    .cb-container label {
+        color: #2274A5;
+    }
+}
+
+@media all and (min-width:601px) {
+    /* Adds plant names to bottom of plant image by default */
+    /* Styles Checkboxs */
+    .cb-container {
+        text-align: center;
+    }
+
+    .cb-container fieldset {
+        font-family: "ubuntu", sans-serif;
+        display: inline;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-right: 2%
+    }
+
+    .cb-container fieldset:nth-child(1) {
+        padding-top: 24px;
+        margin-left: 2%;
+        /*border: 1px solid black;*/
+    }
+
+    .cb-container fieldset:nth-child(2) {
+        padding-top: 0;
+        /*margin-top: 10px;*/
+        /*border: 1px solid black;*/
+
+    }
+
+    .cb-container fieldset:nth-child(3) {
+        padding-top: 47px;
+        /*border: 1px solid black;*/
+    }
+
+    .cb-container fieldset:nth-child(4) {
+        padding-top: 47px;
+        /*border: 1px solid black;*/
+    }
+
+    .cb-container legend {
+        color: #FFBF00;
+        text-align: center;
+    }
+
+    .cb-container label {
+        color: #2274A5;
+    }
+
+}
+/****************************
+   END CUSTOM GALLERY STYLES
+ ****************************/
+
+
+/****************************
+   START TOOLTIP STYLES
+ ****************************/
+
+.ui-tooltip, .arrow:after {
+    background: black !important;
+    border: 2px solid white;
+}
+.ui-tooltip {
+    padding: 10px 20px !important;
+    color: #DD7882 !important;
+    border-radius: 20px !important;
+    font: bold 14px "Lato", Sans-Serif !important;
+    /*text-transform: uppercase;*/
+    box-shadow: 0 0 7px black !important;
+    width: 30%;
+    position: absolute;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+/****************************
+   END TOOLTIP STYLES
+ ****************************/
+
+/****************************
+   START JQ CHECKBOX STYLES
+ ****************************/
+.ui-checkboxradio-label {
+    /*background: #043B59 !important;*/
+    padding: 0 !important;
+    margin-bottom: 5px !important;
+    border: none !important;
+}
+
+.ui-button {
+    background: #043B59 !important;
+}
+
+.ui-button:hover {
+    color: #2274A5 !important;
+}
+
+.ui-state-active, .ui-button.ui-state-active:hover {
+    background: #FFBF00 !important;
+    color: #2274A5 !important;
+}
+
+/************************
+   END JQ CHECKBOX STYLES
+ ***********************/

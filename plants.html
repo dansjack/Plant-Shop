@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plant Shop - Plants</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CLora%7CPlayfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/grid4col.css">
+  <link rel="stylesheet" href="css/plants.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<div class="page-wrap"> <!--Content Group-->
+  <div class="section group"> <!--Banner group-->
+    <div id="banner" class="col span_4_of_4">
+      <!--      Free vector art via <a href="https://www.vecteezy.com">www.vecteezy.com</a>      -->
+      <h1 id="banner-title">Plant Shop</h1>
+    </div>
+  </div> <!--Banner Group-->
+  <div class="section group"> <!--Nav group-->
+    <div id="nav-out" class="col span_4_of_4">
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="curr-page">Plants</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="plants.html" class="nav-links">Plants</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div> <!--Nav Group-->
+  <div class="section group"> <!--Spacing Group-->
+    <div class="col span_2_of_4"></div>
+    <div class="col span_2_of_4"></div>
+  </div> <!--Spacing Group-->
+  <div class="section group">    <!--Checkbox Group-->
+    <aside class="col span_4_of_4 cb-container"
+           title="Filter by one or more categories to find the right plant for you!">
+      <fieldset class="sizes" title="Filter by one or more categories to find the right plant for you!">
+        <legend>Maturity Size</legend>
+        <input class="cb-filter" type="checkbox" name="large" value="large" id="large"/>
+        <label class="cb-label" for="large">Large</label><br />
+        <input class="cb-filter" type="checkbox" name="medium" value="medium" id="medium"/>
+        <label class="cb-label" for="medium">Medium</label><br />
+        <input class="cb-filter" type="checkbox" name="small" value="small" id="small"/>
+        <label class="cb-label" for="small">Small</label>
+      </fieldset>
+      <fieldset class="light" title="Filter by one or more categories to find the right plant for you!">
+        <legend>Light</legend>
+        <input class="cb-filter" type="checkbox" name="l-shade" value="l-shade" id="l-shade"/>
+        <label class="cb-label" for="l-shade">Shade</label><br />
+        <input class="cb-filter" type="checkbox" name="l-pshade" value="l-pshade" id="l-pshade"/>
+        <label class="cb-label" for="l-pshade">Partial Shade</label><br  />
+        <input class="cb-filter" type="checkbox" name="l-isun" value="l-isun" id="l-isun"/>
+        <label class="cb-label" for="l-isun">Indirect Sun</label><br  />
+        <input class="cb-filter" type="checkbox" name="l-fsun" value="l-fsun" id ="l-fsun"/>
+        <label class="cb-label" for="l-fsun">Full Sun</label>
+      </fieldset>
+      <fieldset class="pet" title="Filter by one or more categories to find the right plant for you!">
+        <legend >Pet Friendly</legend>
+        <input class="cb-filter" type="checkbox" name="pf-yes" value="pf-yes" id="pf-yes"/>
+        <label class="cb-label" for="pf-yes">Yes</label><br />
+        <input class="cb-filter" type="checkbox" name="pf-no" value="pf-no" id="pf-no"/>
+        <label class="cb-label" for="pf-no">No</label>
+      </fieldset>
+      <fieldset class="humidity" title="Filter by one or more categories to find the right plant for you!">
+        <legend>Humidity</legend>
+        <input class="cb-filter" type="checkbox" name="h-low" value="h-low" id="h-low"/>
+        <label class="cb-label" for="h-low">Low</label><br />
+        <input class="cb-filter" type="checkbox" name="h-high" value="h-high" id="h-high"/>
+        <label class="cb-label" for="h-high">High</label>
+      </fieldset>
+    </aside>
+  </div> <!--Checkbox Group-->
+  <div class="section group"> <!--Plant Group-->
+    <main class="col span_4_of_4 plant-gallery">
+      <section class="no-touch">
+        <div class="wrap">
+
+          <div class="box medium l-isun h-low pf-yes">
+            <div class="boxInner">
+              <img src="images/stock/pileaFree.jpg"
+                   alt = "Chinese Money Plant" title = "Chinese Money Plant"/>
+              <div class="titleBox">Chinese Money Plant</div>
+            </div>
+          </div>
+
+          <div class="box medium l-isun h-high pf-no">
+            <div class="boxInner">
+              <img src="images/stock/pedatumFree.jpg"
+                   alt = "Oak Leaf Philodendron" title = "Oak Leaf Philodendron" />
+              <div class="titleBox">Oak Leaf Philodendron</div>
+            </div>
+          </div>
+
+          <div class="box large l-fsun h-low pf-no">
+            <div class="boxInner">
+              <img src="images/stock/plumeriaFree.jpg"
+                   alt = "Frangipani" title = "Frangipani" />
+              <div class="titleBox">Frangipani</div>
+            </div>
+          </div>
+
+          <div class="box medium l-shade l-pshade l-isun h-low pf-no">
+            <div class="boxInner">
+              <img src="images/stock/aglaonemaFree.jpg"
+                   alt = "Chinese Evergreen" title = "Chinese Evergreen" />
+              <div class="titleBox">Chinese Evergreen</div>
+            </div>
+          </div>
+
+          <div class="box large l-isun h-high pf-no">
+            <div class="boxInner">
+              <img src="images/stock/ficusFree.jpg"
+                   alt = "Ficus Audrey" title = "Ficus Audrey" />
+              <div class="titleBox">Ficus Audrey</div>
+            </div>
+          </div>
+
+          <div class="box small l-shade l-pshade l-isun h-high pf-yes">
+            <div class="boxInner">
+              <img src="images/stock/rotundifoliaFree.jpg"
+                   alt = "Button Fern" title = "Button Fern" />
+              <div class="titleBox">Button Fern</div>
+            </div>
+          </div>
+
+          <div class="box large l-pshade l-isun h-high pf-no">
+            <div class="boxInner">
+              <img src="images/stock/variegatedFree.jpg"
+                   alt = "Split Leaf Philodendron" title = "Split Leaf Philodendron" />
+              <div class="titleBox">Split Leaf Philodendron</div>
+            </div>
+          </div>
+
+          <div class="box medium l-pshade l-isun h-high pf-yes">
+            <div class="boxInner">
+              <img src="images/stock/stromantheFree.JPG"
+                   alt = "Triostar" title = "Triostar" />
+              <div class="titleBox">Triostar</div>
+            </div>
+          </div>
+
+          <div class="box small l-pshade l-isun h-high pf-no">
+            <div class="boxInner">
+              <img src="images/stock/epipremnumFree.jpg"
+                   alt = "Cebu Blue Pothos" title = "Cebu Blue Pothos" />
+              <div class="titleBox">Cebu Blue Pothos</div>
+            </div>
+          </div>
+
+          <div class="box medium l-isun l-fsun h-high pf-yes">
+            <div class="boxInner">
+              <img src="images/stock/pineappleFree.jpg"
+                   alt = "Dwarf Pineapple" title = "Dwarf Pineapple" />
+              <div class="titleBox">Dwarf Pineapple</div>
+            </div>
+          </div>
+
+          <div class="box medium l-isun h-high pf-yes">
+            <div class="boxInner">
+              <img src="images/stock/medinillaFree.jpg"
+                   alt = "Philippine Orchid" title = "Philippine Orchid" />
+              <div class="titleBox">Philippine Orchid</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div> <!--Plant Group-->
+</div> <!--Content Group-->
+<footer class="section group site-footer"> <!--Footer Group-->
+  <div class="col span_4_of_4">
+    <p>
+      <a href="https://www.instagram.com/janeyenaj/?hl=en" class="footer-icons"><img src="images/icons/ig.svg" alt="Instagram icon"></a>
+      <a href="mailto:ThePlantShop@gmail.com"
+         class="footer-icons"><img src="images/icons/envelope.svg" alt="Email icon"></a>
+    </p>
+    <p><span id="year"></span><a href="contact.html" target="_blank">Plant Shop</a> All Rights Reserved</p>
+  </div>
+</footer> <!--Footer Group-->
+<script src="js/script.js"></script>
+</body>
+</html>

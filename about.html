@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This is to fix the page loading without CSS first. See this SO question for more info: https://stackoverflow
+  .com/questions/4172281/force-browsers-to-load-css-before-showing-the-page-->
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plant Shop - About</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CLora%7CPlayfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/grid4col.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-wrap"> <!--Content Group-->
+    <div class="section group"> <!--Banner group-->
+      <div id="banner" class="col span_4_of_4">
+        <!--      Free vector art via <a href="https://www.vecteezy.com">www.vecteezy.com</a>      -->
+        <h1 id="banner-title">Plant Shop</h1>
+      </div>
+    </div> <!--Banner Group-->
+    <div class="section group"> <!--Nav group-->
+      <div id="nav-out" class="col span_4_of_4">
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+          <a href="#" class="curr-page">About</a>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+              <a href="plants.html" class="nav-links">Plants</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-links">About</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-links">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> <!--Nav Group-->
+    <div class="section group"> <!--Spacing Group-->
+      <div class="col span_2_of_4"></div>
+      <div class="col span_2_of_4"></div>
+    </div> <!--Spacing Group-->
+    <div class="section group"> <!--Main Group-->
+      <div class="col span_2_of_4"> <!--Left Column-->
+        <h3 class="col-heading">About Us</h3>
+        <p>Hey folks! We're Dan and Janey Jack. Janey comes from a background in technical and copywriting, and civil
+          engineering. Dan is a retired Marine with experience in electrical repair and government administration.
+          We might seem like an odd fit for the owners of a small business, but growing and curating our small living
+          space with beautiful plants has been a passion of ours for years, and now we think it's time to share our love
+          of plants with the community!
+        </p><br  />
+        <p>
+          As our plant collection has continued to grow, our friends and family often ask what plants are right for
+          them and their space? We enjoyed giving our advice to enthusiastic prospective plant-parents and determined
+          that we had a real knack for it! And so, we opened up a storefront where we can present our favorite plants
+          for sale and offer up our cumulative expertise.
+        </p><br  />
+      </div> <!--Left Column-->
+      <div class="col span_2_of_4">
+        <h2 class="col-heading">FAQ</h2>
+        <div id="accordion">
+          <h3>Can you let me know when you have new cuttings in stock?</h3>
+          <div>
+            <p>Sure thing! Just fill out the contact form and make sure to click the mailing list checkbox.
+            </p>
+          </div>
+          <h3>How often do new clippings become available?</h3>
+          <div>
+            <p>Unfortunately, this is difficult to predict as changes to supply/demand as well as inclement weather,
+              droughts, etc all effect what our overseas partners have available.
+            </p>
+          </div>
+          <h3>Can you deliver a plant to my work/home?</h3>
+          <div>
+            <p>At this time we do not deliver, but we plan to offer local delivery (within 3 miles of Plant Shop) by the
+              end of the year!
+            </p>
+
+          </div>
+          <h3>Do you have any general tips to keep my plants happy and healthy?</h3>
+          <div>
+            <p>We sure do! Here's a small sample: </p>
+            <ul>
+              <li>Not all plants are created equal! A location for one plant may not work for others, so do your research<br  /></li>
+              <li>If you have trouble overwatering your plants, try using a water mister instead<br  /></li>
+              <li>Rotate your plants a half-turn once a week to promote even growth</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div> <!--Main Group-->
+  </div> <!--Content Group-->
+
+<footer class="section group site-footer"> <!--Footer Group-->
+  <div class="col span_4_of_4">
+    <p>
+      <a href="https://www.instagram.com/janeyenaj/?hl=en" class="footer-icons"><img src="images/icons/ig.svg" alt="Instagram icon"></a>
+      <a href="mailto:ThePlantShop@gmail.com"
+         class="footer-icons"><img src="images/icons/envelope.svg" alt="Email icon"></a>
+    </p>
+    <p><span id="year"></span><a href="contact.html" target="_blank">Plant Shop</a> All Rights Reserved</p>
+  </div>
+</footer> <!--Footer Group-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
